@@ -1,30 +1,4 @@
-    <!DOCTYPE html>
-<html lang="pt">
-<head>
-    <h1>{{filtro}}</h1>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetDevShop - O petshop do dev</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-</head>
-<body>
-<header>
-    <div class="container">
-        <a href="/">PetDevShop</a>
-        <form method="GET" action="">
-            <input type="search" name="q" placeholder="Pesquise por raça" />
-        </form>
-    </div>
-</header>
-<nav>
-    <ul>
-        <li class="active"><a href="/">Todos</a></li>
-        <li class=""><a href="/cachorros">Cachorros</a></li>
-        <li class=""><a href="/gatos">Gatos</a></li>
-        <li class=""><a href="/peixes">Peixes</a></li>
-    </ul>
-</nav>
+{{>partials/head}}
 <section class="banner" style="background-image: url('images/allanimals.jpg')">Todos os animais</section>
 <h2>Todos os animais disponíveis para adoção</h2>
 
@@ -135,8 +109,4 @@
     {{/show}}
 </div>
 
-<footer class="container">
-    Feito com ❤ pela B7Web
-</footer>
-</body>
-</html>
+{{>partials/footer}}

@@ -13,4 +13,4 @@ server.use(express.static(path.join(__dirname, './public')))
 server.use(express.urlencoded({extended:true}))
 server.use(mainPainel)
 
-server.listen(process.env.PORT)
+server.listen(8080)
