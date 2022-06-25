@@ -68,7 +68,8 @@
     "yallist": "^3.1.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e mustache,ts,json scr/server.ts"
   },
   "repository": {
     "type": "git",
@@ -80,5 +81,10 @@
   "bugs": {
     "url": "https://github.com/vini3001/nodets-canil/issues"
   },
-  "homepage": "https://github.com/vini3001/nodets-canil#readme"
+  "homepage": "https://github.com/vini3001/nodets-canil#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mustache-express": "^1.2.2",
+    "@types/node": "^18.0.0"
+  }
 }
