@@ -1,0 +1,19 @@
+#Comandos para subir o código modificado para o github:
+    1- git add . #adiciona os arquivos modificados ao stage 
+    2- git commit -m "texto qualquer" #pega os arquivos do stage e salva o seu estado
+    3- git push #sobe o arquivo do commit para o seu projeto no Github
+
+#Heroku
+    Explicação: o Heroku é uma aplicação que sobe o seu projeto salvo no github para um
+    site online, ou seja, sem a necessidade de um servidor local para poder rodá-lo
+#Passo a passo para executar o Heroku
+    1- Garanta que o seu projeto em typescript seja convertido para javascript e salvos na
+    pasta "dist" e que os demais arquivos de linguagem/engine que não sejam typescript 
+    também estejam juntos na pasta "dist" 
+    2- Adicionar a seguinte modificação no scripts do package.json:
+    "postinstall": "npm run tsc && copyfiles -u 1 scr/**/*.mustache dist/"
+    3- Garanta que todo o seu projeto esteja salvo no Github
+    4- rode o comando: "git push heroku"
+    5- se tudo der certo, seu projeto estará no ar e basta executar o comando: "open heroku"
+    na pasta do seu projeto para abri-lo no navegador
+
